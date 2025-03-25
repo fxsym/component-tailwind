@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar-1</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <h1>Navbar</h1>
+    <nav class=" bg-sky-300 w-full relative">
+        <div class="container mx-auto px-6 py-2 flex items-center justify-between">
+            <div class="flex items-center">
+                <div class="rounded-full w-15 overflow-hidden aspect-square">
+                    <img src="src/img/icon.jpg" class="w-full cursor-pointer" alt="">
+                </div>
+
+                <h1 class="mx-4 font-semibold text-xl">Fatih Syamsudin</h1>
+            </div>
+            <button class="ml-auto cursor-pointer" id="hamburger">
+                <div class="hamburger-line transition-all duration-500"></div>
+                <div class="hamburger-line transition-all duration-500"></div>
+                <div class="hamburger-line transition-all duration-500"></div>
+            </button>
+
+            <ul class=" scale-0 origin-top-right absolute bg-sky-100 right-15 top-12 rounded-xl p-4 w-1/3 transition duration-300" id="navMenu">
+                <li class="  flex justify-center py-2"><a class="hover:text-sky-900" href="">Home</a></li>
+                <li class="  flex justify-center py-2"><a class="hover:text-sky-900" href="">About</a></li>
+                <li class="  flex justify-center py-2"><a class="hover:text-sky-900" href="">Contacs</a></li>
+                <li class="  flex justify-center py-2"><a class="hover:text-sky-900" href="">Person</a></li>
+            </ul>
+        </div>
+    </nav>
     <script src="src/js/script.js"></script>
 </body>
 </html>

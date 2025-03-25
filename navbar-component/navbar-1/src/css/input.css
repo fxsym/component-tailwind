@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+body {
+    @apply font-['Inter'];
+}
+
+.hamburger-line {
+    @apply w-[40px] h-[5px] rounded-xl bg-white my-2;
+}
+
+.hamburger-active > div:nth-child(1) {
+    @apply rotate-45 origin-top-left;
+}
+
+.hamburger-active > div:nth-child(2) {
+    @apply scale-0 origin-left;
+}
+
+.hamburger-active > div:nth-child(3) {
+    @apply -rotate-45 origin-bottom-left;
+}
+
+.navActive {
+    @apply scale-100;
+}
