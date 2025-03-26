@@ -20,6 +20,6 @@ body {
     @apply -rotate-45 origin-bottom-left;
 }
 
-.navActive {
-    @apply h-full;
-}
+.active {
+    @apply max-h-[500px] /* Sesuaikan dengan tinggi maksimal konten */
+  }
