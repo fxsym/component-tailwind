@@ -1,8 +1,10 @@
 console.log('OK')
 const hamburger = document.querySelector('#hamburger')
 const navMenu = document.querySelector('#navMenu')
+const navMenuContain = document.querySelector('#navMenuContain')
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('hamburger-active')
-    navMenu.classList.toggle('navActive')
+    navMenu.classList.toggle('top-[100%]'); 
+    navMenu.classList.toggle('top-[-220%]');
 })
