@@ -14,27 +14,27 @@
 </head>
 
 <body>
-    <nav class=" bg-sky-300 w-full relative">
+    <nav class=" bg-sky-300 w-full relative lg:flex lg:items-center lg:justify-between">
         <div class="container mx-auto px-6 py-2 flex items-center justify-between">
             <div class="flex items-center">
                 <div class="rounded-full w-15 overflow-hidden aspect-square">
                     <img src="src/img/icon.jpg" class="w-full cursor-pointer" alt="">
                 </div>
 
-                <h1 class="mx-4 font-semibold text-xl">Fatih Syamsudin</h1>
+                <h1 class="mx-4 font-semibold text-xl text-sky-900">Fatih Syamsudin</h1>
             </div>
-            <button class="ml-auto cursor-pointer" id="hamburger">
+            <button class="ml-auto cursor-pointer lg:hidden" id="hamburger">
                 <div class="hamburger-line transition-all duration-500"></div>
                 <div class="hamburger-line transition-all duration-500"></div>
                 <div class="hamburger-line transition-all duration-500"></div>
             </button>
         </div>
-        <div class="bg-sky-300 w-full max-h-0 overflow-hidden transition-all duration-500 ease-linear" id="navMenu">
-            <ul class="" >
-                <li class=" mb-2 flex justify-center py-2"><a class="hover:text-sky-900" href="">Home</a></li>
-                <li class=" mb-2 flex justify-center py-2"><a class="hover:text-sky-900" href="">About</a></li>
-                <li class=" mb-2 flex justify-center py-2"><a class="hover:text-sky-900" href="">Contacs</a></li>
-                <li class=" mb-2 flex justify-center py-2"><a class="hover:text-sky-900" href="">Person</a></li>
+        <div class="bg-sky-300 w-full max-h-0 overflow-hidden transition-all duration-500 ease-in-out lg:max-h-10 lg:ml-auto" id="navMenu">
+            <ul class="lg:flex lg:justify-around" >
+                <li class="nav-list"><a class="text-nav-list" href="">Home</a></li>
+                <li class="nav-list"><a class="text-nav-list" href="">About</a></li>
+                <li class="nav-list"><a class="text-nav-list" href="">Contacs</a></li>
+                <li class="nav-list"><a class="text-nav-list" href="">Person</a></li>
             </ul>
         </div>
     </nav>

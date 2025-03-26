@@ -22,4 +22,12 @@ body {
 
 .active {
     @apply max-h-[500px] /* Sesuaikan dengan tinggi maksimal konten */
-  }
+}
+
+.nav-list {
+    @apply mb-2 flex justify-center py-2;
+}
+
+.text-nav-list {
+    @apply hover:text-sky-100 font-['Inter'] text-sky-900
+}
